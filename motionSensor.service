@@ -1,0 +1,11 @@
+[Unit]
+Description=This is a service that will turn the monitor on and off based on PIR input
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/pi/Calendar/sensorCode.py
+
+[Install]
+WantedBy=multi-user.target

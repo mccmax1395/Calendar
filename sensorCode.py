@@ -16,7 +16,7 @@ waitTime = waitWhileOn				#sets wait time to  off delay
 lastTime = ""					#sets time tracker to "".  This is used to consolidate  timer count when program is run from command line
 
 #GPIO variables
-PirInput = 4					#sets signal pin for sensor
+pirInput = 4					#sets signal pin for sensor
 GPIO.setwarnings(False) 			#turns  warnings off
 GPIO.setmode(GPIO.BCM)				#sets mode to BCM
 GPIO.setup(pirInput, GPIO.IN, GPIO.PUD_DOWN)	#sets up GPIO input
